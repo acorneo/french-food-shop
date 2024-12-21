@@ -1,4 +1,5 @@
 import LogoImage from "../../assets/logo.png";
+import CartImage from "../../assets/cart.svg";
 import {
   CombosLink,
   LunchLink,
@@ -38,6 +39,10 @@ const Navigation = () => {
         <NavigationLink title="Combos" link={CombosLink} />
         <NavigationLink title="Lunch" link={LunchLink} />
         <NavigationLink title="Other Goods" link={OtherGoodsLink} />
+      </div>
+      <div className="nav-cart">
+        <img src={CartImage} alt="Cart" />
+        <h4>Cart</h4>
       </div>
     </div>
   );
