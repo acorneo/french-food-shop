@@ -1,0 +1,4 @@
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 9fr 110fr 9fr; /* This seems to be right ratio for desktops */
+}
