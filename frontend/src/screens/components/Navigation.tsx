@@ -28,9 +28,11 @@ const Navigation = () => {
       <div className={styles["nav-logo"]}>
         <img src={LogoImage} alt="Logo" />
         <h4>
-          Croissant
-          <br />
-          World
+          <a href="/">
+            Croissant
+            <br />
+            World
+          </a>
         </h4>
       </div>
       <div className={styles["nav-links"]}>
@@ -40,9 +42,11 @@ const Navigation = () => {
         <NavigationLink title="Lunch" link={LunchLink} />
         <NavigationLink title="Other Goods" link={OtherGoodsLink} />
       </div>
-      <div className="nav-cart">
+      <div className={styles["nav-cart"]}>
         <img src={CartImage} alt="Cart" />
-        <h4>Cart</h4>
+        <h4>
+          <a href="/cart">Cart</a>
+        </h4>
       </div>
     </div>
   );

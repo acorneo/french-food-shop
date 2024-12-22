@@ -1,0 +1,55 @@
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  height: 100px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 60px;
+    margin-right: 15px;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 10px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.nav-cart {
+  display: flex;
+  align-items: center;
+  img {
+    height: 60px;
+    margin-right: 15px;
+  }
+  h4 {
+    margin: 0;
+    font-size: 20px;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
