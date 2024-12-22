@@ -14,11 +14,13 @@
     "@types/koa": "^2.15.0",
     "@types/koa-bodyparser": "^4.3.12",
     "@types/koa-router": "^7.4.8",
+    "better-sqlite3": "^11.7.0",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   }
