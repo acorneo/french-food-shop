@@ -1,10 +1,8 @@
 import LogoImage from "../../assets/logo.png";
 import CartImage from "../../assets/cart.svg";
 import {
-  CombosLink,
   LunchLink,
   NoveltiesLink,
-  OtherGoodsLink,
   PastriesLink,
 } from "../../constants";
 import styles from "./Navigation.module.scss";
@@ -38,9 +36,7 @@ const Navigation = () => {
       <div className={styles["nav-links"]}>
         <NavigationLink title="Novelties" link={NoveltiesLink} />
         <NavigationLink title="Pastries" link={PastriesLink} />
-        <NavigationLink title="Combos" link={CombosLink} />
         <NavigationLink title="Lunch" link={LunchLink} />
-        <NavigationLink title="Other Goods" link={OtherGoodsLink} />
       </div>
       <div className={styles["nav-cart"]}>
         <img src={CartImage} alt="Cart" />
