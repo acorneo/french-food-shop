@@ -1,3 +1,4 @@
+import { useCart } from "../../CartContext";
 import styles from "./LargeCard.module.scss";
 
 interface LargeCardProps {
@@ -13,11 +14,13 @@ const LargeCard: React.FC<LargeCardProps> = ({
   price,
   product_id,
 }) => {
+  const { addToCart } = useCart();
+
   const buyFood = () => {
     console.log(product_id);
-    // todo
-    // it is planned to create like a pop up that shows some ingridients or smth
+    addToCart({ image_url, title, price, product_id });
   };
+
   return (
     <div className={styles["card"]}>
       <img src={image_url} alt="" />
