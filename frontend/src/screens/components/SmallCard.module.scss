@@ -1,16 +1,21 @@
 .card {
   width: 16vw;
-  height: 12vh;
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.5);
+  height: 13vh;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   display: flex;
   align-items: center;
+  margin: 0 20px 0 0;
   img {
-    height: 100%;
+    height: 80%;
     display: inline;
     margin-left: 20px;
+    margin-right: 15px;
   }
   .title {
     margin-bottom: 5px;
+  }
+  :hover {
+    cursor: pointer;
   }
 }

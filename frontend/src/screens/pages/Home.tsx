@@ -2,6 +2,7 @@ import styles from "./Home.module.scss";
 import SmallCard from "../components/SmallCard";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import LargeCard from "../components/LargeCard";
 
 interface Product {
   image_url: string;
@@ -45,12 +46,14 @@ const Home = () => {
         <h3>Loading products...</h3>
       ) : (
         oftenOrderData.map((item) => (
-          <SmallCard
-            image_url={item.image_url}
-            title={item.title}
-            price={item.price}
-            product_id={item.product_id}
-          />
+          <div style={{ display: "inline-block" }}>
+            <SmallCard
+              image_url={item.image_url}
+              title={item.title}
+              price={item.price}
+              product_id={item.product_id}
+            />
+          </div>
         ))
       )}
 
@@ -59,12 +62,14 @@ const Home = () => {
         <h3>Loading products...</h3>
       ) : (
         noveltiesData.map((item) => (
-          <SmallCard
-            image_url={item.image_url}
-            title={item.title}
-            price={item.price}
-            product_id={item.product_id}
-          />
+          <div style={{ display: "inline-block" }}>
+            <LargeCard
+              image_url={item.image_url}
+              title={item.title}
+              price={item.price}
+              product_id={item.product_id}
+            />
+          </div>
         ))
       )}
 
@@ -73,12 +78,14 @@ const Home = () => {
         <h3>Loading products...</h3>
       ) : (
         pastriesData.map((item) => (
-          <SmallCard
-            image_url={item.image_url}
-            title={item.title}
-            price={item.price}
-            product_id={item.product_id}
-          />
+          <div style={{ display: "inline-block" }}>
+            <LargeCard
+              image_url={item.image_url}
+              title={item.title}
+              price={item.price}
+              product_id={item.product_id}
+            />
+          </div>
         ))
       )}
 
@@ -87,12 +94,14 @@ const Home = () => {
         <h3>Loading products...</h3>
       ) : (
         lunchData.map((item) => (
-          <SmallCard
-            image_url={item.image_url}
-            title={item.title}
-            price={item.price}
-            product_id={item.product_id}
-          />
+          <div style={{ display: "inline-block" }}>
+            <LargeCard
+              image_url={item.image_url}
+              title={item.title}
+              price={item.price}
+              product_id={item.product_id}
+            />
+          </div>
         ))
       )}
     </>
